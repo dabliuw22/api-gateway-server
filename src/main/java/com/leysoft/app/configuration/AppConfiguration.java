@@ -8,6 +8,10 @@ import brave.sampler.Sampler;
 @Configuration
 public class AppConfiguration {
 	
+	/**
+	 * Bean for traceability with Sleuth
+	 * @return
+	 */
 	@Bean
 	public Sampler defaultSampler() {
 		return Sampler.ALWAYS_SAMPLE;
